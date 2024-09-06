@@ -47,10 +47,7 @@ static  BOOL LSSafeProtectorKVODebugInfoEnable=NO;
             [NSArray openSpinmasSafeProtector];
         }
         
-        if (types & LSSafeProtectorCrashTypeNSMutableArray) {
-            [NSMutableArray openSpinmasSafeProtector];
-            [NSMutableArray opSpinmasenMRCSafeProtector];
-        }
+     
         
         if (types & LSSafeProtectorCrashTypeNSDictionary) {
             [NSDictionary openSpinmasSafeProtector];

@@ -136,6 +136,7 @@ Application* app = nullptr;
      If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
      */
     [[SDKWrapper getInstance] applicationDidEnterBackground:application];
+    [self saveContext];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -151,6 +152,40 @@ Application* app = nullptr;
     delete app;
     app = nil;
 }
+
+- (void)saveContext {
+    NSManagedObjectContext *context = self.persistentContainer.viewContext;
+    if ([context hasChanges]) {
+        @try {
+            NSError *error = nil;
+            if (![context save:&error]) {
+                // 处理错误
+                NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+                abort();
+            }
+        }
+        @catch (NSException *exception) {
+            NSLog(@"Exception occurred: %@, %@", exception, [exception userInfo]);
+            abort();
+        }
+    }
+}
+
+// 懒加载 NSPersistentContainer
+- (NSPersistentContainer *)persistentContainer {
+    if (_persistentContainer == nil) {
+        _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"spinmaster_slots_trek"];
+        
+        [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
+            if (error != nil) {
+                NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+                abort();
+            }
+        }];
+    }
+    return _persistentContainer;
+}
+
 
 
 #pragma mark -

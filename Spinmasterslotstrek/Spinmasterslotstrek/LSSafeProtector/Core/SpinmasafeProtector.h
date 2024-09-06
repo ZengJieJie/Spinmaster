@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "LSSafeProtectorDefine.h"
 
-#define LSKVOSafeLog(fmt, ...) safe_KVOCustomLog(fmt,##__VA_ARGS__)
+#define LSKVOSafeLog(fmt, ...) sSpinmasafe_KVOCustomLog(fmt,##__VA_ARGS__)
 
 @interface SpinmasafeProtector : NSObject
     
