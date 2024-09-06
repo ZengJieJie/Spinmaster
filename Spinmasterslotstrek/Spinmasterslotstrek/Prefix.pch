@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'SpinmasterSlotsTrek' target in the 'SpinmasterSlotsTrek' project
+//
+//
+//  AppDelegate.h
+//  Spinmasterslotstrek
+//
+//  Created by adin on 2024/9/5.
+//
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif

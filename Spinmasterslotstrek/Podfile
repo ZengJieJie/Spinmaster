@@ -9,7 +9,9 @@ target 'Spinmasterslotstrek' do
   use_frameworks!
 
    pod 'IQKeyboardManager'
-
+   pod 'Adjust','4.38.4'
+   pod 'UMCommon'
+   pod 'UMDevice'
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|

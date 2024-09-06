@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ce0-Ru-anz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ce0-Ru-anz">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -33,7 +34,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEp-tW-36B">
-                                        <rect key="frame" x="30" y="68" width="403.66666666666669" height="288"/>
+                                        <rect key="frame" x="30" y="68" width="403.66666666666663" height="288"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="machine" translatesAutoresizingMaskIntoConstraints="NO" id="bPB-bz-oyq">
                                                 <rect key="frame" x="0.0" y="0.0" width="403.66666666666669" height="288"/>
@@ -221,22 +222,22 @@
             </objects>
             <point key="canvasLocation" x="182" y="856"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Spinmaster Navigation Controller-->
         <scene sceneID="JAb-du-Sxv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ce0-Ru-anz" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ce0-Ru-anz" customClass="SpinmasterNavigationController" customModule="Spinmasterslotstrek" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5FR-tE-XUK">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="8VJ-d8-EnY" kind="relationship" relationship="rootViewController" id="MhY-pR-P2z"/>
+                        <segue destination="iXl-66-5Bg" kind="relationship" relationship="rootViewController" id="Tcu-SC-5Zb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtK-Pv-5iW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.69014084507043" y="-28.244274809160306"/>
+            <point key="canvasLocation" x="882" y="-28"/>
         </scene>
         <!--Spinmaster Pri View Controller-->
         <scene sceneID="AI2-q6-uw3">
@@ -929,7 +930,7 @@ By email: help@gmail.com
                                                 <rect key="frame" x="0.0" y="0.0" width="139.33333333333334" height="78.333333333333329"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gb-Ai-5IM">
-                                                <rect key="frame" x="28.666666666666679" y="31.666666666666654" width="82.333333333333314" height="15.333333333333332"/>
+                                                <rect key="frame" x="28.666666666666679" y="31.666666666666654" width="82.333333333333314" height="15.333333333333339"/>
                                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="13"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -968,7 +969,7 @@ By email: help@gmail.com
                                                 <rect key="frame" x="0.0" y="0.0" width="139.33333333333334" height="78.666666666666671"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPC-Hm-TuN">
-                                                <rect key="frame" x="42.666666666666686" y="31.666666666666654" width="54" height="15.333333333333332"/>
+                                                <rect key="frame" x="42.666666666666686" y="31.666666666666654" width="54" height="15.333333333333339"/>
                                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="13"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1055,92 +1056,6 @@ By email: help@gmail.com
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZdO-xp-wVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="156" y="-895"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Yu2-Cc-py9">
-            <objects>
-                <viewController id="8VJ-d8-EnY" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lLf-UF-ie2">
-                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="cjW-b3-5yS">
-                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qls-4v-w1d">
-                                <rect key="frame" x="59" y="0.0" width="734" height="372"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYG-fx-Hqm">
-                                        <rect key="frame" x="30" y="16" width="674" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="DC0-DR-myB"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="40"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spinmaster slots trek" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ga3-Dz-69N">
-                                        <rect key="frame" x="30" y="74" width="674" height="40"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="rUE-xZ-BzC"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="30"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5al-98-k2t">
-                                        <rect key="frame" x="30" y="130" width="372" height="226"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXa-Jc-k0h">
-                                        <rect key="frame" x="432" y="168.66666666666669" width="272" height="148.66666666666669"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Let's Play" backgroundImage="btn">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="iXl-66-5Bg" kind="show" id="iox-Vt-dkF"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="IXa-Jc-k0h" secondAttribute="trailing" constant="30" id="4YZ-2G-4nY"/>
-                                    <constraint firstItem="IXa-Jc-k0h" firstAttribute="height" secondItem="qls-4v-w1d" secondAttribute="height" multiplier="0.4" id="59A-E5-k96"/>
-                                    <constraint firstItem="ga3-Dz-69N" firstAttribute="top" secondItem="dYG-fx-Hqm" secondAttribute="bottom" constant="8" id="6AW-pg-F3H"/>
-                                    <constraint firstItem="dYG-fx-Hqm" firstAttribute="leading" secondItem="qls-4v-w1d" secondAttribute="leading" constant="30" id="BB2-xE-jHn"/>
-                                    <constraint firstItem="IXa-Jc-k0h" firstAttribute="centerY" secondItem="5al-98-k2t" secondAttribute="centerY" id="Te0-Ks-jcl"/>
-                                    <constraint firstItem="ga3-Dz-69N" firstAttribute="leading" secondItem="qls-4v-w1d" secondAttribute="leading" constant="30" id="Zlr-qn-gJR"/>
-                                    <constraint firstItem="IXa-Jc-k0h" firstAttribute="leading" secondItem="5al-98-k2t" secondAttribute="trailing" constant="30" id="aMR-vD-urw"/>
-                                    <constraint firstItem="5al-98-k2t" firstAttribute="top" secondItem="ga3-Dz-69N" secondAttribute="bottom" constant="16" id="eB6-7O-VxM"/>
-                                    <constraint firstAttribute="trailing" secondItem="ga3-Dz-69N" secondAttribute="trailing" constant="30" id="nFn-ZN-zbC"/>
-                                    <constraint firstItem="5al-98-k2t" firstAttribute="leading" secondItem="qls-4v-w1d" secondAttribute="leading" constant="30" id="sfM-c2-6Es"/>
-                                    <constraint firstItem="dYG-fx-Hqm" firstAttribute="top" secondItem="qls-4v-w1d" secondAttribute="top" constant="16" id="vQ9-4c-PyR"/>
-                                    <constraint firstItem="5al-98-k2t" firstAttribute="width" secondItem="qls-4v-w1d" secondAttribute="height" id="vuu-4S-Kbi"/>
-                                    <constraint firstAttribute="bottom" secondItem="5al-98-k2t" secondAttribute="bottom" constant="16" id="vzG-VO-U1X"/>
-                                    <constraint firstAttribute="trailing" secondItem="dYG-fx-Hqm" secondAttribute="trailing" constant="30" id="zWt-Po-Itf"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="DPB-wr-whC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="cjW-b3-5yS" secondAttribute="trailing" id="8Uw-J2-hc3"/>
-                            <constraint firstItem="cjW-b3-5yS" firstAttribute="leading" secondItem="lLf-UF-ie2" secondAttribute="leading" id="C1Y-rb-kpO"/>
-                            <constraint firstItem="qls-4v-w1d" firstAttribute="top" secondItem="DPB-wr-whC" secondAttribute="top" id="Qci-AA-g0K"/>
-                            <constraint firstItem="qls-4v-w1d" firstAttribute="leading" secondItem="DPB-wr-whC" secondAttribute="leading" id="VQs-74-ryq"/>
-                            <constraint firstItem="DPB-wr-whC" firstAttribute="trailing" secondItem="qls-4v-w1d" secondAttribute="trailing" id="djp-2N-FuD"/>
-                            <constraint firstItem="cjW-b3-5yS" firstAttribute="top" secondItem="lLf-UF-ie2" secondAttribute="top" id="jzg-V1-s7W"/>
-                            <constraint firstItem="DPB-wr-whC" firstAttribute="bottom" secondItem="qls-4v-w1d" secondAttribute="bottom" id="pqy-iU-vQu"/>
-                            <constraint firstAttribute="bottom" secondItem="cjW-b3-5yS" secondAttribute="bottom" id="vt6-nR-YFO"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="CsP-Wn-pvp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N5Q-Vp-18K" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="882.3943661971831" y="-28.244274809160306"/>
         </scene>
         <!--Spinmaster Home View Controller-->
         <scene sceneID="Ycj-ti-8IU">
@@ -1504,7 +1419,7 @@ Thank you for choosing SpinMaster Slots Trek. We are committed to continually en
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN1-Ac-AIe">
-                                        <rect key="frame" x="440.33333333333337" y="0.0" width="115" height="114.66666666666667"/>
+                                        <rect key="frame" x="440.33333333333337" y="0.0" width="115.00000000000011" height="114.66666666666667"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     </button>
@@ -1858,7 +1773,7 @@ Thank you for choosing SpinMaster Slots Trek. We are committed to continually en
         <image name="btn1" width="818" height="212"/>
         <image name="btn2" width="1387" height="212"/>
         <image name="f1" width="5541" height="4023"/>
-        <image name="frame" width="626" height="626"/>
+        <image name="frame" width="128" height="128"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="logo" width="446" height="348"/>
         <image name="machine" width="640" height="360"/>
