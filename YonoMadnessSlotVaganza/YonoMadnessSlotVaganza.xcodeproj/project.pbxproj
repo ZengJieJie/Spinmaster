@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BC0A4C36D822A26D5A6E89C /* Pods_YonoMadnessSlotVaganza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD0817159EEE9772931BAB4 /* Pods_YonoMadnessSlotVaganza.framework */; };
+		C6CDADE82CA6FB4F0035B830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDADE72CA6FB4F0035B830 /* AppDelegate.swift */; };
+		C6CDADEA2CA6FB4F0035B830 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDADE92CA6FB4F0035B830 /* SceneDelegate.swift */; };
+		C6CDADEC2CA6FB4F0035B830 /* YonoMadnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDADEB2CA6FB4F0035B830 /* YonoMadnessViewController.swift */; };
+		C6CDADEF2CA6FB4F0035B830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CDADED2CA6FB4F0035B830 /* Main.storyboard */; };
+		C6CDADF12CA6FB520035B830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CDADF02CA6FB520035B830 /* Assets.xcassets */; };
+		C6CDADF42CA6FB520035B830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CDADF22CA6FB520035B830 /* LaunchScreen.storyboard */; };
+		C6CDADFF2CA6FB520035B830 /* YonoMadnessSlotVaganzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDADFE2CA6FB520035B830 /* YonoMadnessSlotVaganzaTests.swift */; };
+		C6CDAE092CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE082CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests.swift */; };
+		C6CDAE0B2CA6FB520035B830 /* YonoMadnessSlotVaganzaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE0A2CA6FB520035B830 /* YonoMadnessSlotVaganzaUITestsLaunchTests.swift */; };
+		C6CDAE252CA6FB870035B830 /* YonoMadnessHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE172CA6FB860035B830 /* YonoMadnessHomeVC.swift */; };
+		C6CDAE262CA6FB870035B830 /* Vc + Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE182CA6FB860035B830 /* Vc + Audio.swift */; };
+		C6CDAE272CA6FB870035B830 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6CDAE192CA6FB860035B830 /* plane.obj */; };
+		C6CDAE282CA6FB870035B830 /* Vc + Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE1A2CA6FB860035B830 /* Vc + Back.swift */; };
+		C6CDAE292CA6FB870035B830 /* View + Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE1B2CA6FB860035B830 /* View + Corner.swift */; };
+		C6CDAE2A2CA6FB870035B830 /* YonoMadnessSlotGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE1C2CA6FB860035B830 /* YonoMadnessSlotGameVC.swift */; };
+		C6CDAE2B2CA6FB870035B830 /* Img + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE1D2CA6FB860035B830 /* Img + Ext.swift */; };
+		C6CDAE2C2CA6FB870035B830 /* FireGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE1E2CA6FB860035B830 /* FireGameScene.swift */; };
+		C6CDAE2D2CA6FB870035B830 /* YonoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE1F2CA6FB860035B830 /* YonoNavigationController.swift */; };
+		C6CDAE2E2CA6FB870035B830 /* YonoMadnessPriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE202CA6FB870035B830 /* YonoMadnessPriViewController.swift */; };
+		C6CDAE2F2CA6FB870035B830 /* YonoMadnessLauchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE212CA6FB870035B830 /* YonoMadnessLauchVC.swift */; };
+		C6CDAE302CA6FB870035B830 /* scr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6CDAE222CA6FB870035B830 /* scr.mp3 */; };
+		C6CDAE312CA6FB870035B830 /* YonoMadnessGameOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE232CA6FB870035B830 /* YonoMadnessGameOneVC.swift */; };
+		C6CDAE322CA6FB870035B830 /* GameOneProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE242CA6FB870035B830 /* GameOneProtocol.swift */; };
+		C6CDAE362CA6FDEC0035B830 /* YonoMadnessReaManage.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CDAE352CA6FDEC0035B830 /* YonoMadnessReaManage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6CDADFB2CA6FB520035B830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6CDADDC2CA6FB4F0035B830 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6CDADE32CA6FB4F0035B830;
+			remoteInfo = YonoMadnessSlotVaganza;
+		};
+		C6CDAE052CA6FB520035B830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6CDADDC2CA6FB4F0035B830 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6CDADE32CA6FB4F0035B830;
+			remoteInfo = YonoMadnessSlotVaganza;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DD0817159EEE9772931BAB4 /* Pods_YonoMadnessSlotVaganza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YonoMadnessSlotVaganza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D1D31FF0E2901C7CF91631 /* Pods-YonoMadnessSlotVaganza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YonoMadnessSlotVaganza.release.xcconfig"; path = "Target Support Files/Pods-YonoMadnessSlotVaganza/Pods-YonoMadnessSlotVaganza.release.xcconfig"; sourceTree = "<group>"; };
+		C6CDADE42CA6FB4F0035B830 /* YonoMadnessSlotVaganza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YonoMadnessSlotVaganza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CDADE72CA6FB4F0035B830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6CDADE92CA6FB4F0035B830 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C6CDADEB2CA6FB4F0035B830 /* YonoMadnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonoMadnessViewController.swift; sourceTree = "<group>"; };
+		C6CDADEE2CA6FB4F0035B830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6CDADF02CA6FB520035B830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6CDADF32CA6FB520035B830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6CDADF52CA6FB520035B830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6CDADFA2CA6FB520035B830 /* YonoMadnessSlotVaganzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YonoMadnessSlotVaganzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CDADFE2CA6FB520035B830 /* YonoMadnessSlotVaganzaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonoMadnessSlotVaganzaTests.swift; sourceTree = "<group>"; };
+		C6CDAE042CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YonoMadnessSlotVaganzaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CDAE082CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonoMadnessSlotVaganzaUITests.swift; sourceTree = "<group>"; };
+		C6CDAE0A2CA6FB520035B830 /* YonoMadnessSlotVaganzaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YonoMadnessSlotVaganzaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6CDAE172CA6FB860035B830 /* YonoMadnessHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YonoMadnessHomeVC.swift; sourceTree = "<group>"; };
+		C6CDAE182CA6FB860035B830 /* Vc + Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Vc + Audio.swift"; sourceTree = "<group>"; };
+		C6CDAE192CA6FB860035B830 /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
+		C6CDAE1A2CA6FB860035B830 /* Vc + Back.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Vc + Back.swift"; sourceTree = "<group>"; };
+		C6CDAE1B2CA6FB860035B830 /* View + Corner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View + Corner.swift"; sourceTree = "<group>"; };
+		C6CDAE1C2CA6FB860035B830 /* YonoMadnessSlotGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YonoMadnessSlotGameVC.swift; sourceTree = "<group>"; };
+		C6CDAE1D2CA6FB860035B830 /* Img + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Img + Ext.swift"; sourceTree = "<group>"; };
+		C6CDAE1E2CA6FB860035B830 /* FireGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireGameScene.swift; sourceTree = "<group>"; };
+		C6CDAE1F2CA6FB860035B830 /* YonoNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YonoNavigationController.swift; sourceTree = "<group>"; };
+		C6CDAE202CA6FB870035B830 /* YonoMadnessPriViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YonoMadnessPriViewController.swift; sourceTree = "<group>"; };
+		C6CDAE212CA6FB870035B830 /* YonoMadnessLauchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YonoMadnessLauchVC.swift; sourceTree = "<group>"; };
+		C6CDAE222CA6FB870035B830 /* scr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scr.mp3; sourceTree = "<group>"; };
+		C6CDAE232CA6FB870035B830 /* YonoMadnessGameOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YonoMadnessGameOneVC.swift; sourceTree = "<group>"; };
+		C6CDAE242CA6FB870035B830 /* GameOneProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOneProtocol.swift; sourceTree = "<group>"; };
+		C6CDAE332CA6FDEB0035B830 /* YonoMadnessSlotVaganza-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YonoMadnessSlotVaganza-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6CDAE342CA6FDEB0035B830 /* YonoMadnessReaManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YonoMadnessReaManage.h; sourceTree = "<group>"; };
+		C6CDAE352CA6FDEC0035B830 /* YonoMadnessReaManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YonoMadnessReaManage.m; sourceTree = "<group>"; };
+		D6E7AA42B71CDB8FD0A50CE0 /* Pods-YonoMadnessSlotVaganza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YonoMadnessSlotVaganza.debug.xcconfig"; path = "Target Support Files/Pods-YonoMadnessSlotVaganza/Pods-YonoMadnessSlotVaganza.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6CDADE12CA6FB4F0035B830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC0A4C36D822A26D5A6E89C /* Pods_YonoMadnessSlotVaganza.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CDADF72CA6FB520035B830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CDAE012CA6FB520035B830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6CDADDB2CA6FB4F0035B830 = {
+			isa = PBXGroup;
+			children = (
+				C6CDADE62CA6FB4F0035B830 /* YonoMadnessSlotVaganza */,
+				C6CDADFD2CA6FB520035B830 /* YonoMadnessSlotVaganzaTests */,
+				C6CDAE072CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests */,
+				C6CDADE52CA6FB4F0035B830 /* Products */,
+				DFA53C1F365BDC3A8AE5CE02 /* Pods */,
+				EEB1DA5E0ABC5A8E64734189 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6CDADE52CA6FB4F0035B830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6CDADE42CA6FB4F0035B830 /* YonoMadnessSlotVaganza.app */,
+				C6CDADFA2CA6FB520035B830 /* YonoMadnessSlotVaganzaTests.xctest */,
+				C6CDAE042CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6CDADE62CA6FB4F0035B830 /* YonoMadnessSlotVaganza */ = {
+			isa = PBXGroup;
+			children = (
+				C6CDAE1E2CA6FB860035B830 /* FireGameScene.swift */,
+				C6CDAE242CA6FB870035B830 /* GameOneProtocol.swift */,
+				C6CDAE232CA6FB870035B830 /* YonoMadnessGameOneVC.swift */,
+				C6CDAE172CA6FB860035B830 /* YonoMadnessHomeVC.swift */,
+				C6CDAE1D2CA6FB860035B830 /* Img + Ext.swift */,
+				C6CDAE212CA6FB870035B830 /* YonoMadnessLauchVC.swift */,
+				C6CDAE192CA6FB860035B830 /* plane.obj */,
+				C6CDAE222CA6FB870035B830 /* scr.mp3 */,
+				C6CDAE1C2CA6FB860035B830 /* YonoMadnessSlotGameVC.swift */,
+				C6CDAE182CA6FB860035B830 /* Vc + Audio.swift */,
+				C6CDAE1A2CA6FB860035B830 /* Vc + Back.swift */,
+				C6CDAE1B2CA6FB860035B830 /* View + Corner.swift */,
+				C6CDAE202CA6FB870035B830 /* YonoMadnessPriViewController.swift */,
+				C6CDAE1F2CA6FB860035B830 /* YonoNavigationController.swift */,
+				C6CDADE72CA6FB4F0035B830 /* AppDelegate.swift */,
+				C6CDADE92CA6FB4F0035B830 /* SceneDelegate.swift */,
+				C6CDADEB2CA6FB4F0035B830 /* YonoMadnessViewController.swift */,
+				C6CDADED2CA6FB4F0035B830 /* Main.storyboard */,
+				C6CDADF02CA6FB520035B830 /* Assets.xcassets */,
+				C6CDADF22CA6FB520035B830 /* LaunchScreen.storyboard */,
+				C6CDADF52CA6FB520035B830 /* Info.plist */,
+				C6CDAE342CA6FDEB0035B830 /* YonoMadnessReaManage.h */,
+				C6CDAE352CA6FDEC0035B830 /* YonoMadnessReaManage.m */,
+				C6CDAE332CA6FDEB0035B830 /* YonoMadnessSlotVaganza-Bridging-Header.h */,
+			);
+			path = YonoMadnessSlotVaganza;
+			sourceTree = "<group>";
+		};
+		C6CDADFD2CA6FB520035B830 /* YonoMadnessSlotVaganzaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6CDADFE2CA6FB520035B830 /* YonoMadnessSlotVaganzaTests.swift */,
+			);
+			path = YonoMadnessSlotVaganzaTests;
+			sourceTree = "<group>";
+		};
+		C6CDAE072CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6CDAE082CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests.swift */,
+				C6CDAE0A2CA6FB520035B830 /* YonoMadnessSlotVaganzaUITestsLaunchTests.swift */,
+			);
+			path = YonoMadnessSlotVaganzaUITests;
+			sourceTree = "<group>";
+		};
+		DFA53C1F365BDC3A8AE5CE02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6E7AA42B71CDB8FD0A50CE0 /* Pods-YonoMadnessSlotVaganza.debug.xcconfig */,
+				32D1D31FF0E2901C7CF91631 /* Pods-YonoMadnessSlotVaganza.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EEB1DA5E0ABC5A8E64734189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DD0817159EEE9772931BAB4 /* Pods_YonoMadnessSlotVaganza.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6CDADE32CA6FB4F0035B830 /* YonoMadnessSlotVaganza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6CDAE0E2CA6FB520035B830 /* Build configuration list for PBXNativeTarget "YonoMadnessSlotVaganza" */;
+			buildPhases = (
+				E6844868971EBCCF3485AD2F /* [CP] Check Pods Manifest.lock */,
+				C6CDADE02CA6FB4F0035B830 /* Sources */,
+				C6CDADE12CA6FB4F0035B830 /* Frameworks */,
+				C6CDADE22CA6FB4F0035B830 /* Resources */,
+				FB095A93EB21D29D145185F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YonoMadnessSlotVaganza;
+			productName = YonoMadnessSlotVaganza;
+			productReference = C6CDADE42CA6FB4F0035B830 /* YonoMadnessSlotVaganza.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6CDADF92CA6FB520035B830 /* YonoMadnessSlotVaganzaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6CDAE112CA6FB520035B830 /* Build configuration list for PBXNativeTarget "YonoMadnessSlotVaganzaTests" */;
+			buildPhases = (
+				C6CDADF62CA6FB520035B830 /* Sources */,
+				C6CDADF72CA6FB520035B830 /* Frameworks */,
+				C6CDADF82CA6FB520035B830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6CDADFC2CA6FB520035B830 /* PBXTargetDependency */,
+			);
+			name = YonoMadnessSlotVaganzaTests;
+			productName = YonoMadnessSlotVaganzaTests;
+			productReference = C6CDADFA2CA6FB520035B830 /* YonoMadnessSlotVaganzaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6CDAE032CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6CDAE142CA6FB520035B830 /* Build configuration list for PBXNativeTarget "YonoMadnessSlotVaganzaUITests" */;
+			buildPhases = (
+				C6CDAE002CA6FB520035B830 /* Sources */,
+				C6CDAE012CA6FB520035B830 /* Frameworks */,
+				C6CDAE022CA6FB520035B830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6CDAE062CA6FB520035B830 /* PBXTargetDependency */,
+			);
+			name = YonoMadnessSlotVaganzaUITests;
+			productName = YonoMadnessSlotVaganzaUITests;
+			productReference = C6CDAE042CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6CDADDC2CA6FB4F0035B830 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C6CDADE32CA6FB4F0035B830 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					C6CDADF92CA6FB520035B830 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C6CDADE32CA6FB4F0035B830;
+					};
+					C6CDAE032CA6FB520035B830 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C6CDADE32CA6FB4F0035B830;
+					};
+				};
+			};
+			buildConfigurationList = C6CDADDF2CA6FB4F0035B830 /* Build configuration list for PBXProject "YonoMadnessSlotVaganza" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6CDADDB2CA6FB4F0035B830;
+			productRefGroup = C6CDADE52CA6FB4F0035B830 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6CDADE32CA6FB4F0035B830 /* YonoMadnessSlotVaganza */,
+				C6CDADF92CA6FB520035B830 /* YonoMadnessSlotVaganzaTests */,
+				C6CDAE032CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6CDADE22CA6FB4F0035B830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CDADF42CA6FB520035B830 /* LaunchScreen.storyboard in Resources */,
+				C6CDADF12CA6FB520035B830 /* Assets.xcassets in Resources */,
+				C6CDAE272CA6FB870035B830 /* plane.obj in Resources */,
+				C6CDADEF2CA6FB4F0035B830 /* Main.storyboard in Resources */,
+				C6CDAE302CA6FB870035B830 /* scr.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CDADF82CA6FB520035B830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CDAE022CA6FB520035B830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6844868971EBCCF3485AD2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YonoMadnessSlotVaganza-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB095A93EB21D29D145185F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YonoMadnessSlotVaganza/Pods-YonoMadnessSlotVaganza-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YonoMadnessSlotVaganza/Pods-YonoMadnessSlotVaganza-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YonoMadnessSlotVaganza/Pods-YonoMadnessSlotVaganza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6CDADE02CA6FB4F0035B830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CDAE362CA6FDEC0035B830 /* YonoMadnessReaManage.m in Sources */,
+				C6CDAE2B2CA6FB870035B830 /* Img + Ext.swift in Sources */,
+				C6CDAE2A2CA6FB870035B830 /* YonoMadnessSlotGameVC.swift in Sources */,
+				C6CDADEC2CA6FB4F0035B830 /* YonoMadnessViewController.swift in Sources */,
+				C6CDAE282CA6FB870035B830 /* Vc + Back.swift in Sources */,
+				C6CDAE252CA6FB870035B830 /* YonoMadnessHomeVC.swift in Sources */,
+				C6CDAE2F2CA6FB870035B830 /* YonoMadnessLauchVC.swift in Sources */,
+				C6CDAE262CA6FB870035B830 /* Vc + Audio.swift in Sources */,
+				C6CDAE292CA6FB870035B830 /* View + Corner.swift in Sources */,
+				C6CDAE2E2CA6FB870035B830 /* YonoMadnessPriViewController.swift in Sources */,
+				C6CDAE2D2CA6FB870035B830 /* YonoNavigationController.swift in Sources */,
+				C6CDADE82CA6FB4F0035B830 /* AppDelegate.swift in Sources */,
+				C6CDAE2C2CA6FB870035B830 /* FireGameScene.swift in Sources */,
+				C6CDADEA2CA6FB4F0035B830 /* SceneDelegate.swift in Sources */,
+				C6CDAE312CA6FB870035B830 /* YonoMadnessGameOneVC.swift in Sources */,
+				C6CDAE322CA6FB870035B830 /* GameOneProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CDADF62CA6FB520035B830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CDADFF2CA6FB520035B830 /* YonoMadnessSlotVaganzaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CDAE002CA6FB520035B830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CDAE0B2CA6FB520035B830 /* YonoMadnessSlotVaganzaUITestsLaunchTests.swift in Sources */,
+				C6CDAE092CA6FB520035B830 /* YonoMadnessSlotVaganzaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6CDADFC2CA6FB520035B830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6CDADE32CA6FB4F0035B830 /* YonoMadnessSlotVaganza */;
+			targetProxy = C6CDADFB2CA6FB520035B830 /* PBXContainerItemProxy */;
+		};
+		C6CDAE062CA6FB520035B830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6CDADE32CA6FB4F0035B830 /* YonoMadnessSlotVaganza */;
+			targetProxy = C6CDAE052CA6FB520035B830 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6CDADED2CA6FB4F0035B830 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6CDADEE2CA6FB4F0035B830 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6CDADF22CA6FB520035B830 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6CDADF32CA6FB520035B830 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6CDAE0C2CA6FB520035B830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6CDAE0D2CA6FB520035B830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6CDAE0F2CA6FB520035B830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6E7AA42B71CDB8FD0A50CE0 /* Pods-YonoMadnessSlotVaganza.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YonoMadnessSlotVaganza/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "YoNoMadness Slot Vaganza";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "YoNoChipsNStrikesPoker needs to obtain your device information for analysis and to bring you a unique gaming experience.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YonozengMadnessSlotVaganza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YonoMadnessSlotVaganza/YonoMadnessSlotVaganza-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C6CDAE102CA6FB520035B830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32D1D31FF0E2901C7CF91631 /* Pods-YonoMadnessSlotVaganza.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YonoMadnessSlotVaganza/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "YoNoMadness Slot Vaganza";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "YoNoChipsNStrikesPoker needs to obtain your device information for analysis and to bring you a unique gaming experience.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YonozengMadnessSlotVaganza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YonoMadnessSlotVaganza/YonoMadnessSlotVaganza-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C6CDAE122CA6FB520035B830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoDazzle.YonoMadnessSlotVaganzaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YonoMadnessSlotVaganza.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YonoMadnessSlotVaganza";
+			};
+			name = Debug;
+		};
+		C6CDAE132CA6FB520035B830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoDazzle.YonoMadnessSlotVaganzaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YonoMadnessSlotVaganza.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YonoMadnessSlotVaganza";
+			};
+			name = Release;
+		};
+		C6CDAE152CA6FB520035B830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoDazzle.YonoMadnessSlotVaganzaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YonoMadnessSlotVaganza;
+			};
+			name = Debug;
+		};
+		C6CDAE162CA6FB520035B830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoDazzle.YonoMadnessSlotVaganzaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YonoMadnessSlotVaganza;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6CDADDF2CA6FB4F0035B830 /* Build configuration list for PBXProject "YonoMadnessSlotVaganza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CDAE0C2CA6FB520035B830 /* Debug */,
+				C6CDAE0D2CA6FB520035B830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6CDAE0E2CA6FB520035B830 /* Build configuration list for PBXNativeTarget "YonoMadnessSlotVaganza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CDAE0F2CA6FB520035B830 /* Debug */,
+				C6CDAE102CA6FB520035B830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6CDAE112CA6FB520035B830 /* Build configuration list for PBXNativeTarget "YonoMadnessSlotVaganzaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CDAE122CA6FB520035B830 /* Debug */,
+				C6CDAE132CA6FB520035B830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6CDAE142CA6FB520035B830 /* Build configuration list for PBXNativeTarget "YonoMadnessSlotVaganzaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CDAE152CA6FB520035B830 /* Debug */,
+				C6CDAE162CA6FB520035B830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6CDADDC2CA6FB4F0035B830 /* Project object */;
+}

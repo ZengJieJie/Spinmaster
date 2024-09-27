@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uzA-3d-2gr">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kAv-XS-Jhk">
+            <objects>
+                <viewController id="uzA-3d-2gr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LkL-e5-nJO">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NEz-OT-fau">
+                                <rect key="frame" x="79" y="20" width="694" height="332"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qWi-7Q-v0b"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="NEz-OT-fau" firstAttribute="top" secondItem="qWi-7Q-v0b" secondAttribute="top" constant="20" id="GS3-4Z-7NU"/>
+                            <constraint firstItem="qWi-7Q-v0b" firstAttribute="trailing" secondItem="NEz-OT-fau" secondAttribute="trailing" constant="20" id="NfC-Jn-Qxn"/>
+                            <constraint firstItem="NEz-OT-fau" firstAttribute="leading" secondItem="qWi-7Q-v0b" secondAttribute="leading" constant="20" id="SRn-88-SSJ"/>
+                            <constraint firstItem="qWi-7Q-v0b" firstAttribute="bottom" secondItem="NEz-OT-fau" secondAttribute="bottom" constant="20" id="h9f-NU-SeL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGw-dN-0Gh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="1214" height="1214"/>
+        <namedColor name="bg">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
